@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Erron Languis</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: #121212;
+      color: #e0e0e0;
+      overflow-x: hidden;
+    }
+
+    .header {
+      text-align: center;
+      padding: 2rem;
+      background: #1f1f1f;
+      color: #bb86fc;
+    }
+
+    .main {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .about-me {
+      margin-bottom: 2rem;
+    }
+
+    
+
+    .skills {
+      margin: 2rem 0;
+      padding: 2rem;
+      background: #1f1f1f;
+      color: #e0e0e0;
+      border-radius: 10px;
+      border: 2px solid violet;
+    }
+
+    .skills h2 {
+      margin-bottom: 1rem;
+      color: #bb86fc;
+    }
+
+    .skills ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .skills ul li {
+      margin: 1rem;
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .skills ul li i {
+      font-size: 2rem;
+      color: #03dac6;
+      margin-bottom: 0.5rem;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .contact-form {
+      background: #1f1f1f;
+      color: #e0e0e0;
+      padding: 2rem;
+      border-radius: 10px;
+      border: 2px solid violet;
+    }
+
+    .contact-form h2 {
+      margin-bottom: 1rem;
+      color: #bb86fc;
+    }
+
+    .contact-form label {
+      display: block;
+      margin: 0.5rem 0 0.2rem;
+      font-weight: bold;
+      color: #e0e0e0;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin-bottom: 1rem;
+      border: 1px solid #333;
+      border-radius: 5px;
+      background: #121212;
+      color: #e0e0e0;
+    }
+
+    .contact-form button {
+      padding: 0.7rem 1.5rem;
+      background: #bb86fc;
+      color: #121212;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .contact-form button:hover {
+      background: #03dac6;
+      color: #121212;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 1rem;
+      background: #1f1f1f;
+      color: #e0e0e0;
+    }
+
+    @media (max-width: 600px) {
+      .profile-pic {
+        width: 100px;
+        height: 100px;
+      }
+
+      .skills ul {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <h1>Welcome to My Website</h1>
+  </header>
+
+  <main class="main">
+    <section class="about-me">
+      
+      <h2>About Me</h2>
+      <p>Hello! I'm Erron Languis, a passionate software developer. I specialize in delivering creative and efficient solutions. Welcome to my portfolio!</p>
+    </section>
+
+    <section class="skills">
+      <h2>My Skills</h2>
+      <ul>
+        <li>
+          <i class="fas fa-users"></i>
+          <p>Teamwork</p>
+        </li>
+        <li>
+          <i class="fas fa-brain"></i>
+          <p>Critical Thinking</p>
+        </li>
+        <li>
+          <i class="fas fa-clock"></i>
+          <p>Time Management</p>
+        </li>
+        <li>
+          <i class="fas fa-lightbulb"></i>
+          <p>Decision Making</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="contact-form">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/{your_form_id}" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Made with care © 2024 Erron Languis</p>
+  </footer>
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
